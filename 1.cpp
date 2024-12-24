@@ -11,7 +11,7 @@ int main(){
 	}
 		int choice;
 	do{
-		printf("========MENU========\n");
+		printf("\n========MENU========\n");
 		printf("1. in ra cac phan tu\n");
 		printf("2. su dung insertion sort sap xep mang giam dan in ra\n");
 		printf("3. su dung seletion sort sap xep mang tang dan va in ra\n");
@@ -24,6 +24,7 @@ int main(){
 				for(int i = 0; i < n; i++){
 					printf("%d ",arr[i]);
 				}
+				break;
 			case 2:
 				for(int i = 1; i < n; i++){
 					int could = arr[i];
@@ -37,6 +38,7 @@ int main(){
 				for(int i = 0; i < n; i++){
 					printf("%d ",arr[i]);
 				}
+				break;
 			case 3:
 				for (int i = 0; i < n-1; i++){
 					int min = i;
@@ -52,6 +54,7 @@ int main(){
 				for(int i = 0; i < n; i++){
 					printf("%d ",arr[i]);
 				}
+				break;
 			case 4:
 				for (int i = 0; i < n-1; i++){
 					for (int j =i+1; j < n; j++){
@@ -65,7 +68,9 @@ int main(){
 				for(int i = 0; i < n; i++){
 					printf("%d ",arr[i]);
 				}
+				break;
 			case 5:
+				printf("thoat...");
 				return 0;
 		}
 	}while(choice!=5);
